@@ -12,16 +12,16 @@ body {
 
 .cultivate {
     background: url(../img/cultivate.png) no-repeat;
-    width: 1400px;
+    width: 1200px;
     background-size: cover;
-    height: 960px;
-    margin: 100px auto;
+    height: 1000px;
+    margin: 0px auto;
 }
 
 #chart {
-    width: 940px;
-    height: 600px;
-    margin: 115px 220px;
+    width: 810px;
+    height: 760px;
+    margin: 136px 180px;
     display: inline-block;
 }
 

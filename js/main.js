@@ -36,8 +36,7 @@ var option = {
             repulsion: 200
         },
         data: [{
-            id: 0,
-            draggable: true
+            id: 0
         }],
         links: []
     }
