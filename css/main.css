@@ -1,0 +1,69 @@
+html, body, .myContent {
+    height: auto;
+    min-height: 100%;
+}
+
+body {
+    font-family: "微软雅黑", Helvetica, Arial, sans-serif;
+    font-size: 18px !important;
+    color: #333;
+    background-color: #fff;
+}
+
+.cultivate {
+    background: url(../img/cultivate.png) no-repeat;
+    width: 1400px;
+    background-size: cover;
+    height: 960px;
+    margin: 100px auto;
+}
+
+#chart {
+    width: 940px;
+    height: 600px;
+    margin: 115px 220px;
+    display: inline-block;
+}
+
+.img {
+    background-image: url(../img/all.jpg);
+    display: inline-block;
+    cursor: pointer;
+    position: relative;
+}
+
+.img1 {
+    background-position: -30px -50px;
+    width: 120px;
+    height: 170px;
+}
+
+.img2 {
+    background-position: -320px -72px;
+    width: 150px;
+    height: 155px;
+}
+
+.img3 {
+    background-position: -499px -32px;
+    width: 124px;
+    height: 195px;
+}
+
+.img4 {
+    background-position: -30px -416px;
+    width: 125px;
+    height: 160px;
+}
+
+.img5 {
+    background-position: -25px -589px;
+    width: 145px;
+    height: 160px;
+}
+
+.img6 {
+    background-position: -176px -433px;
+    width: 175px;
+    height: 122px;
+}

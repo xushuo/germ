@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <title>生物</title>
+        <link rel="stylesheet" href="css/normalize.css" type="text/css" media="all"/>
+        <link rel="stylesheet" href="css/bootstrap.css" type="text/css" media="all"/>
+        <link rel="stylesheet" href="css/jquery.fullPage.css" type="text/css" media="all"/>
+        <link rel="stylesheet" href="css/main.css" type="text/css" media="all"/>
+</head>
+<body>
+<div class="row">
+        <div class="col-md-4">
+                <!--<img id="drag1" src="./img/all.jpg" draggable="true" ondragstart="drag(event)"/>-->
+                <div class="img img1" id="drag1" draggable="true" ondragstart="drag(event)"></div>
+                <div class="img img2" id="drag2" draggable="true" ondragstart="drag(event)"></div>
+                <div class="img img3" id="drag3" draggable="true" ondragstart="drag(event)"></div>
+                <div class="img img4" id="drag4" draggable="true" ondragstart="drag(event)"></div>
+                <div class="img img5" id="drag5" draggable="true" ondragstart="drag(event)"></div>
+                <div class="img img6" id="drag6" draggable="true" ondragstart="drag(event)"></div>
+        </div>
+        <div class="col-md-8">
+                <div style="border: 5px solid #333;height: 500px" id="div1" ondrop="drop(event)"
+                     ondragover="allowDrop(event)">
+                        <div class="img img3 hidden" id="drop3"  style="top: 10px;left: 219px;"></div>
+                        <div class="img img4 hidden" id="drop4" style="top: 10px;left: 301px;"></div>
+                        <div class="img img5 hidden" id="drop5"  style="top: 154px;left: 54px;"></div>
+                        <div class="img img6 hidden" id="drop6"  style="top: -43px;left: 150px;"></div>
+                </div>
+        </div>
+</div>
+<script type="text/javascript" src="vendor/jquery.min.js"></script>
+<script type="text/javascript" src="vendor/bootstrap.min.js"></script>
+<script type="text/javascript" src="vendor/jquery.fullPage.min.js"></script>
+<script>
+    function allowDrop(ev) {
+        ev.preventDefault();
+    }
+
+    function drag(ev) {
+        ev.dataTransfer.setData("Text", ev.target.id);
+    }
+
+    function drop(ev) {
+        ev.preventDefault();
+        var data = ev.dataTransfer.getData("Text");
+        if(data=='drag3'){
+           // ev.target.appendChild(document.getElementById(data));
+            $("#drop3").removeClass('hidden')
+            $("#drag3").remove()
+        }
+        if(data=='drag4'){
+            $("#drop4").removeClass('hidden')
+            $("#drag4").remove()
+        }
+        if(data=='drag5'){
+            $("#drop5").removeClass('hidden')
+            $("#drag5").remove()
+        }
+        if(data=='drag6'){
+            $("#drop6").removeClass('hidden')
+            $("#drag6").remove()
+        }
+    }
+</script>
+</body>
+</html>
